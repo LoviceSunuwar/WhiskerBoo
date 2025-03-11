@@ -6,15 +6,22 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct WhiskerBooApp: App {
     let persistenceController = PersistenceController.shared
+    
+    // MARK: - Initalizers
+    
+    init(){
+        FirebaseApp.configure()
+        print("Configured Firebase")
+    }
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            OnboardingView()
         }
     }
 }

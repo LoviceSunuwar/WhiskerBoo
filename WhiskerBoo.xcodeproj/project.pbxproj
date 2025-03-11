@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B29BA1D52D7FDA6C007B5ECE /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B29BA1D42D7FDA6C007B5ECE /* FirebaseAnalytics */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B24E1C132D79321100320053 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,30 @@
 		B24E1C1C2D79321100320053 /* WhiskerBooUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhiskerBooUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B29BA1D12D7FD985007B5ECE /* Exceptions for "WhiskerBoo" folder in "WhiskerBooTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = B24E1C112D79321100320053 /* WhiskerBooTests */;
+		};
+		B29BA1D22D7FD985007B5ECE /* Exceptions for "WhiskerBoo" folder in "WhiskerBooUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = B24E1C1B2D79321100320053 /* WhiskerBooUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B24E1BFF2D79320F00320053 /* WhiskerBoo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B29BA1D12D7FD985007B5ECE /* Exceptions for "WhiskerBoo" folder in "WhiskerBooTests" target */,
+				B29BA1D22D7FD985007B5ECE /* Exceptions for "WhiskerBoo" folder in "WhiskerBooUITests" target */,
+			);
 			path = WhiskerBoo;
 			sourceTree = "<group>";
 		};
@@ -52,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29BA1D52D7FDA6C007B5ECE /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +138,7 @@
 			);
 			name = WhiskerBoo;
 			packageProductDependencies = (
+				B29BA1D42D7FDA6C007B5ECE /* FirebaseAnalytics */,
 			);
 			productName = WhiskerBoo;
 			productReference = B24E1BFD2D79320F00320053 /* WhiskerBoo.app */;
@@ -192,9 +219,13 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = B24E1BF42D79320E00320053;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B29BA1D32D7FDA6C007B5ECE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B24E1BFE2D79320F00320053 /* Products */;
 			projectDirPath = "";
@@ -274,6 +305,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -337,6 +369,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -558,6 +591,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B29BA1D32D7FDA6C007B5ECE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B29BA1D42D7FDA6C007B5ECE /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B29BA1D32D7FDA6C007B5ECE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B24E1BF52D79320E00320053 /* Project object */;
 }
