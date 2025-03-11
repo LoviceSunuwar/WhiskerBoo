@@ -1,0 +1,46 @@
+# Xcode & macOS
+.DS_Store
+*.swp
+*.lock
+*.xcuserstate
+
+# Build
+build/
+DerivedData/
+*.xcworkspace
+
+# Xcode project user data
+*.xcuserdata/
+*.xcscmblueprint
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/
+
+# Swift Package Manager
+/.package/
+/.build/
+Package.resolved
+
+# Firebase
+GoogleService-Info.plist
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# Archive
+*.xcarchive
+
+# Logs
+*.log
+
+# Temporary
+*.tmp
+
+# Coverage
+*.xccovreport
+*.xccovarchive
